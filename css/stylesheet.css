@@ -1,368 +1,54 @@
-/* Variables */
-:root {
-  /* Colors */
-  --lambda-red: #bb1333;
-  --lambda-blue: #0c3c78;
-  --lambda-lightblue: #3ab5e5;
-  --lambda-grey: #55596d;
-
-  /* Spacing */
-  --small-space: 5px;
-  --medium-space: 10px;
-  --large-space: 20px;
-  --xlarge-space: 30px;
+//* CSS Reset needs to be put here*/
+Body{
+  background-image: url(././img/amback.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
 }
 
-html, body {
-  box-sizing: border-box;
-  font-size: 62.5%;
-}
-
-body {
+.container{
+	margin: 0 auto;
+	width: 920px;
+  height: 920px;
   background: white;
-  color: black;
-  font: 1.5em "Lato", Helvetica, sans-serif;
+  border-radius: 20px;
 }
 
-a {
-  color: var(--lambda-blue);
+.logo{
+  margin: 20px;
+}
+
+.navarea{
+  display: flex;
+  align-items: center;
+}
+
+.navbutton{
+  border: 1px solid grey;
+  padding: 10px 20px;
+  margin: 5px;
   text-decoration: none;
-}
-
-a:hover {
-  color: var(--lambda-lightblue);
-}
-
-h1, h2, h3 {
-  margin: 0;
-}
-
-#masthead {
-  background: var(--lambda-red);
   color: white;
-  padding: var(--medium-space) var(--xlarge-space);
-
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  position: sticky;
-  position: -webkit-sticky;
-  top: 0;
+  background-color: black;
+  border-radius: 20px;
+  
 }
 
-#logo {
-  width: 160px;
-  height: 80px;
+.SMIcon{
+  width: 50px;
 }
-
-#navigation a {
-  color: #ddd;
-  font-size: 1.2rem;
-  text-transform: uppercase;
-  margin-right: var(--large-space);
+.SMI2con{
+  width: 55px;
 }
-
-#navigation a:hover {
-  color: white;
-  transition: color .4s ease;
-}
-
-#navigation a.cta {
-  background: white;
-  color: var(--lambda-grey);
-  border-radius: 5px;
-  padding: 12px 16px;
-  margin-right: 0;
-}
-
-.hero {
-  background: center / cover url("/img/hero01.jpg");
-  color: white;
-  text-align: center;
-  height: 400px;
-
-  /* Center content horizontally and vertically */
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
-  align-items: center;
-
-  margin-bottom: var(--xlarge-space);
-}
-
-.hero.second {
-  background-image: url("/img/hero02.jpg")
-}
-
-.hero.third {
-  background-image: url("/img/hero03.jpg");
-}
-
-.hero h1, .hero h3 {
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.85);
-}
-
-.hero h1 {
-  font-size: 5rem;
-  padding-bottom: var(--large-space);
-}
-
-.hero h3 {
-  font-size: 2.5rem;
-}
-
-.content {
-  margin: var(--xlarge-space) auto;
-}
-
-.content p {
-  line-height: 1.6;
-  text-align: justify;
-  hyphens: auto;
-  -webkit-hyphens: auto;
-  padding: var(--medium-space) 0;
-}
-
-.solutions {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: var(--medium-space);
-}
-
-.solutions img, .solutions .copy {
-  padding: var(--medium-space) var(--large-space);
-}
-
-.solutions .copy.flip {
-  align-self: center;
-}
-
-/* Testimonials */
-.tab-links, .tab {
-  margin: var(--large-space) 0;
-}
-
-.tab-links {
-  text-align: center;
-}
-
-.tab-links a {
-  color: var(--lambda-grey);
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  margin-right: var(--xlarge-space);
-}
-
-.tab-links a:last-child {
-  margin: 0;
-}
-
-.tab-links .link-selected {
-  color: var(--lambda-red);
-  transition: color .2s ease-in;
-}
-
-.tab {
-  display: none;
-}
-
-.tab.item-selected {
-  display: flex;
-  justify-content: space-between;
-}
-
-.tab img, .tab p {
-  margin: var(--large-space);
-}
-
-.tab img {
-  border-radius: 50%;
-  width: 250px;
-  height: 250px;
-}
-
-.tab p {
-  color: var(--lambda-grey);
-  font-size: 1.8rem;
-  align-self: center;
-}
-
-#footer {
-  background: #eee;
-  color: #aaa;
-  font-size: 1.2rem;
-  padding: var(--large-space);
-}
-
-#footer p {
-  text-align: center;
-}
-
-/* Modal */
-.modal {
-  background: rgba(0, 0, 0, 0.75);
-  display: none;
-  z-index: 1;
-
-  position: fixed;
-  left: 0;
-  top: 0;
-
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-}
-
-.modal.visible {
+.bannerarea{
   display: flex;
   justify-content: center;
-  align-items: center;
+}
+.banner{
+  width: 600px;
+  height: 300px;
 }
 
-.modal-header, .modal-content {
-  padding: var(--medium-space);
-}
-
-.modal-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.close-button {
-  font-size: 1rem;
-  border-radius: 50%;
-  width: 15px;
-  height: 15px;
-  padding: var(--small-space);
+h1{
   text-align: center;
-  line-height: 15px;
-}
-
-.close-button:hover {
-  background: #333;
-  color: white;
-  cursor: pointer;
-}
-
-.modal-content {
-  background: #fefefe;
-  border: 1px solid #888;
-  border-radius: 10px;
-
-  margin: var(--small-space) auto;
-  width: 400px;
-
-  -webkit-animation: animate-zoom 0.6s;
-  animation: animate-zoom 0.6s;
-}
-
-.form-container {
-  width: 200px;
-  padding: var(--small-space);
-  margin: 0 auto;
-}
-
-.form-container p {
-  text-align: center;
-}
-
-.form-container input {
-  font-size: 1.8rem;
-  padding: var(--small-space);
-  margin-bottom: var(--medium-space);
-}
-
-.form-container .hidden {
-  display: none;
-}
-
-@keyframes animate-zoom {
-  from {transform: scale(0)}
-  to {transform: scale(1)}
-}
-
-/* Responsive Breakpoints */
-/* Desktop */
-@media only screen and (min-width: 1024px) {
-  .content {
-    width: 65%;
-  }
-}
-
-/* Tablet */
-@media only screen and (max-width: 768px) {
-  .content {
-    margin: var(--large-space);
-  }
-}
-
-/* Mobile */
-@media only screen and (max-width: 600px) {
-  /* Make masthead static on mobile */
-  #masthead {
-    position: static;
-  }
-
-  #masthead nav {
-    margin: var(--medium-space) 0;
-  }
-
-  #navigation a {
-    text-align: center;
-    padding: var(--medium-space);
-  }
-
-  #logo {
-    margin: 0;
-  }
-
-  /* Make flexbox elements more presentable on mobile */
-  #masthead, .solutions, .tab {
-    flex-flow: column wrap;
-  }
-
-  .solutions.flip {
-    flex-direction: column-reverse;
-  }
-
-  .hero h1, .hero h3 {
-    padding: var(--small-space);
-  }
-
-  .tab-links a {
-    display: block;
-    margin: 0;
-    padding-bottom: var(--large-space);
-  }
-
-  .modal-content {
-    width: 80%;
-  }
-}
-
-@media only screen and (max-width: 400px) {
-  #navigation a {
-    margin-right: var(--medium-space);
-  }
-
-  /* Get rid of left and right margins on mobile */
-  .solutions .copy {
-    margin: var(--large-space) 0;
-  }
-}
-
-@media only screen and (max-width: 360px) {
-  #navigation a {
-    display: block;
-    margin-right: 0;
-  }
-
-  .solutions img {
-    object-fit: contain;
-    width: 250px;
-    height: 150px;
-  }
 }

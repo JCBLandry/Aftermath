@@ -4,120 +4,31 @@
     <title>devDesk</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link rel="stylesheet" href="css/stylesheet.css">
     <script src="js/login.js" async></script>
     <script src="js/tabs.js" async></script>
   </head>
   <body>
-    <header id="masthead">
-      <a href="index.html">
-        <img src="img/logo.svg" id="logo" alt="devDesk">
-      </a>
-      <nav id="navigation">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="#">Blog</a>
-        <a href="#!" class="cta">Sign in</a>
+    <section class="container">
+      <section class="navarea">
+      <img class="logo" src="img/amlogo.png" alt="The Aftermath Logo">
+      <nav>
+        <a class="navbutton" href="#">Home</a>
+        <a class="navbutton" href="#">Schedule</a>
+        <a class="navbutton" href="#">About Us</a>
+        <a class="navbutton" href="#">New Players</a>
       </nav>
-    </header>
-    <header class="hero">
-        <h1>Introducing devDesk</h1>
-        <h3>Relax, devDesk has arrived and has your back!</h3>
-    </header>
-    <section class="content">
-      <article class="solutions">
-          <img src="img/solutions01.jpg" alt="Placeholder image">
-          <section class="copy">
-            <h2>Take Control of the Problems Around You!</h2>
-            <p>With devDesk, issue submission forms are streamlined to get the
-            maximum amount of information from the end user without overwhelming
-            them. Clearly defined sections and labels make sure the end user
-            gets you the information you need to solve any problem imaginable!</p>
-          </section>
-        </article>
-      <article class="solutions flip">
-        <section class="copy">
-          <h2>Don't let issues slip through the cracks!</h2>
-          <p>With email and countless integrations with services like Slack, you will
-          never forget an open ticket. Simple notifcations keep you abreast of any changes
-          to tickets in real time. Mark a ticket with three different levels of severity
-          to make things easy to sort and view from above.</p>
+        <img class="SMI2con" src="" alt="Facebook Link">
+        <img class="SMIcon" src="" alt="Discord Link">
+      </section>
+      <section class="bannerarea">
+        <img class="banner" src="https://www.bbsocal.com/wp-content/uploads/2018/05/image-placeholder.png" alt="Aftermath Banner">
         </section>
-        <img src="img/solutions02.jpg" alt="Placeholder image">
-      </article>
-      <article class="solutions">
-        <img src="img/solutions03.jpg" alt="Placeholder image">
-        <section class="copy">
-          <h2>End User notifications keep everyone happy!</h2>
-          <p>Once a ticket is checked out by you, the end user is automatically
-          notified that their problems will soon be at an end! Cut out the
-          middle man of sending an email to let the user know you are on their
-          problem with notifcations on their slack or email with a click of
-          a button.</p>
-        </section>
-      </article>
+      <section>
+        <h1>Fantasy Survial Redefined or some other cool phrase</h1>
+      </section>
+      
+    
     </section>
-    <header class="hero second">
-      <h1>Testimonials from our users</h1>
-      <h3>Don't just take it from us, these people live devDesk.</h3>
-    </header>
-    <section class="content">
-      <nav class="tab-links">
-        <a href="#!" class="link-selected" data-tab="1">Bradley Taylor</a>
-        <a href="#!" data-tab="2">Laura Eckley</a>
-        <a href="#!" data-tab="3">Ryan Schneider</a>
-      </nav>
-      <div class="tab-content">
-        <div class="tab item-selected" data-tab="1">
-          <img src="img/testimonial01.jpg" alt="Bradley Taylor">
-          <p>After years of using Jira, devDesk was a breath of fresh air!
-          I love that the automatic notifcations are stopping my users
-          from interupting me at my desk to see if I have started on their
-          problem. It gives me plenty of breathing room to focus on the task at hand!</p>
-        </div>
-        <div class="tab" data-tab="2">
-          <img src="img/testimonial02.jpg" alt="Laura Eckley">
-          <p>I had a nightmare time trying to get users to submit enough
-          information in their tickets. Each ticket I worked on had a
-          massive back and forth of emails just for me to get basic information,
-          but with devDesk's forms, the users know EXACTLY what information we need!</p>
-        </div>
-        <div class="tab" data-tab="3">
-          <img src="img/testimonial03.jpg" alt="Ryan Schneider">
-          <p>I cannot express how many times the notifcations have saved my tail.
-          I have issues keeping everything organized and several dropped balls
-          were caught thanks to the severity system devDesk uses. My day to day
-          is chaotic and it gives me great piece of mind to know devDesk is on
-          my side when I am trying to remember what still needs to be done!</p>
-        </div>
-      </div>
-    </section>
-    <footer id="footer">
-      <p>&copy; 2019 devDesk, LLC.</p>
-    </footer>
-    <!-- login box -->
-    <div class="modal">
-      <form class="modal-content" action="#">
-        <header class="modal-header">
-          <h3>Sign in or register</h3>
-          <div class="close-button" title="Close Modal">&times;</div>
-        </header>
-        <section class="form-container">
-          <input type="text" placeholder="Username" name="username" required>
-          <input type="text" placeholder="Email address" name="email" class="hidden">
-          <input type="password" placeholder="Password" name="password" required>
-          <input type="password" placeholder="Confirm password" class="hidden" name="password2">
-
-          <input type="checkbox" checked="checked" id="remember-checkbox" name="remember">
-          <label for="remember-checkbox">Remember Me</label>
-          <br>
-
-          <button type="submit">Login</button>
-          <p><a href="#!" class="register-button">Don't have an account?</a></p>
-        </section>
-      </form>
-    </div>
   </body>
-</html>
