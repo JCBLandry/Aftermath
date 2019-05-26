@@ -4,6 +4,7 @@ Body{
   background-repeat: no-repeat;
   background-size: cover;
   z-index: -1;
+  background-color: black;
 }
 
 .container{
@@ -51,4 +52,27 @@ Body{
 
 h1{
   text-align: center;
+}
+
+.content p {
+  line-height: 1.6;
+  text-align: justify;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  padding: var(--medium-space) 0;
+}
+
+.solutions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: var(--medium-space);
+}
+
+.solutions img, .solutions .copy {
+  padding: var(--medium-space) var(--large-space);
+}
+
+.solutions .copy.flip {
+  align-self: center;
 }
