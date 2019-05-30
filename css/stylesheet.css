@@ -10,7 +10,8 @@ Body{
 .container{
 	margin: 0 auto;
 	width: 920px;
-  background: white;
+  /* background: darkgray; */
+  background-image: linear-gradient(grey, black);
   border-radius: 20px;
 }
 
@@ -36,9 +37,10 @@ Body{
 
 .SMIcon{
   width: 50px;
+  margin-top: 5px;
 }
 .SMI2con{
-  width: 55px;
+  width: 50px;
 }
 .bannerarea{
   display: flex;
@@ -47,6 +49,7 @@ Body{
 .banner{
   width: 600px;
   height: 300px;
+  border-radius: 10px;
 }
 
 h1{
@@ -59,6 +62,7 @@ h1{
   hyphens: auto;
   -webkit-hyphens: auto;
   padding: var(--medium-space) 0;
+  border-bottom: 1px double white;
 }
 
 .solutions {
@@ -74,4 +78,9 @@ h1{
 
 .solutions .copy.flip {
   align-self: center;
+}
+
+.articleImg{
+  margin: 20px;
+  border-radius: 10px;
 }
