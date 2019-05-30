@@ -1,6 +1,6 @@
-//* CSS Reset needs to be put here*/
+/* CSS Reset needs to be put here*/
 Body{
-  background-image: url(././img/amback.jpg);
+  background-image: url('/img/amback.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   z-index: -1;
@@ -10,7 +10,6 @@ Body{
 .container{
 	margin: 0 auto;
 	width: 920px;
-  height: 920px;
   background: white;
   border-radius: 20px;
 }
