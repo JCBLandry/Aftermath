@@ -85,7 +85,6 @@ h1{
   margin: 20px;
   border-radius: 10px;
   max-width: 400px;
-  max-height: 700px;
 }
 
 /* Dropdown Button */
@@ -141,4 +140,9 @@ h1{
     margin: 0 auto;
     max-width: 100%;
     width: auto;
+}
+
+.center{
+  margin: 0 auto;
+  width: 50%;
 }
