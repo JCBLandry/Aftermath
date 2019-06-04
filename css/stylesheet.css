@@ -82,7 +82,7 @@ h1{
 }
 
 .articleImg{
-  margin: 20px;
+  margin: 40px;
   border-radius: 10px;
   max-width: 400px;
 }
@@ -145,4 +145,20 @@ h1{
 .center{
   margin: 0 auto;
   width: 50%;
+}
+
+h2{
+  font-family: 'ZCOOL KuaiLe', cursive;
+}
+
+p{
+  font-family: 'Kalam', cursive;
+}
+
+.sch{
+  display: block;
+    height: auto;
+    margin: 0 auto;
+    max-width: 100%;
+    width: auto;
 }
