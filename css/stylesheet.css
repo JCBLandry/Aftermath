@@ -35,7 +35,10 @@ Body{
   border-radius: 20px;
   font-family: 'Germania One', sans-serif;
 }
-
+.navbutton:hover {
+  color: black;
+  background-color: white;
+}
 .SMIcon{
   width: 50px;
   margin-top: 5px;
@@ -87,14 +90,6 @@ h1{
   max-width: 400px;
 }
 
-/* Dropdown Button */
-.dropbtn {
-  background-color: #4CAF50;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-}
 
 /* The container <div> - needed to position the dropdown content */
 .dropdown {
