@@ -164,3 +164,10 @@ p{
     display: hidden;
   }
 }
+
+@media only screen and (min-width: 600px) {
+  .content {
+    margin: 50px;
+  }
+ 
+}
