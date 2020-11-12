@@ -41,3 +41,11 @@ $("#button10").click(function () {
 $("#button11").click(function () {
   $("#story11").toggle();
 });
+$('nav li').hover(
+  function() {
+    $('ul', this).stop().slideDown(200);
+  },
+  function() {
+    $('ul', this).stop().slideUp(200);
+  }
+);
