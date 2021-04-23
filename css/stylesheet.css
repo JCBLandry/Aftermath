@@ -17,12 +17,13 @@ Body{
 }
 
 .logo{
-  margin: 20px;
+  margin: 10px;
 }
 
 .navarea{
   display: flex;
   align-items: center;
+  /* border: 1px solid blue; */
 }
 
 .navbutton{
@@ -138,7 +139,7 @@ h2{
 }
 
 p{
-  font-family: 'Kalam', cursive;
+  font-family: 'MedievalSharp', cursive;
   margin: 0 auto;
 }
 
@@ -179,3 +180,110 @@ p{
   align-items: center;
   justify-content: space-between;
 }
+
+/* The containerOld <div> - needed to position the dropdown content */
+.dropdown1 {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content1 {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  margin-top: 5px;
+}
+
+/* Links inside the dropdown */
+.dropdown-content1 a {
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content1 a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown1:hover .dropdown-content1 {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown1:hover .dropbtn1 {background-color: #3e8e41;}
+
+/* The containerOld <div> - needed to position the dropdown content */
+.dropdown2 {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content2 {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  margin-top: 5px;
+}
+
+/* Links inside the dropdown */
+.dropdown-content2 a {
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content2 a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown2:hover .dropdown-content2 {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown2:hover .dropbtn2 {background-color: #3e8e41;}
+
+/* nav { background: #2ba0db; } */
+
+nav ul {
+  font-size: 0;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  position: relative;
+}
+
+nav ul li a {
+  color: #fff;
+  display: block;
+  font-size: 14px;
+  padding: 15px 14px;
+  transition: 0.3s linear;
+}
+
+/* nav ul li:hover { background: #126d9b; } */
+
+nav ul li ul {
+  /* border-bottom: 5px solid #2ba0db; */
+  display: none;
+  position: absolute;
+  width: 250px;
+}
+
+nav ul li ul li {
+  /* border-top: 1px solid #444; */
+  display: block;
+  border-radius: 10px;
+}
+
+nav ul li ul li:first-child { border-top: none; }
+
+nav ul li ul li a {
+  background: #373737;
+  display: block;
+  padding: 10px 14px;
+  border-radius: 10px;
+}
+
+nav ul li ul li a:hover { background: #126d9b; }
